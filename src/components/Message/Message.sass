@@ -1,0 +1,64 @@
+@import "../../styles/_variables";
+
+.message
+  margin-bottom: 15px
+  &__avatar
+    align-self: flex-end
+    margin-right: 13px
+    img
+      border-radius: 50%
+      width: 33px
+      height: 33px
+  &__bubble
+    background-color: $blue
+    box-shadow: 0px 5px 5px rgba(54, 116, 255, 0.196733)
+    border-radius: 12px 12px 12px 0
+    padding: 15px
+    max-width: 440px
+  &__text
+    color: #ffffff
+    line-height: 1.5
+  &__content
+    display: flex
+    align-items: flex-end
+    margin-bottom: 5px
+  &__date
+    margin-left: 46px
+    font-size: 12px
+    color: #9c9c9c
+  &__check
+    align-self: flex-end
+    margin-left: 9px
+  &__attachments
+    display: flex
+    margin-left: 46px
+    margin-bottom: 5px
+  &__attachment
+    margin-right: 5px
+    cursor: pointer
+    &:last-child
+      margin-right: 0
+    img
+      width: 45px
+      height: 45px
+      border-radius: 8px
+  &--isme
+    text-align: right
+    .message__avatar
+      margin-right: 0
+      margin-left: 13px
+    .message__bubble
+      border-radius: 12px 12px 0 12px
+      border: 1px solid #ececec
+      box-shadow: 0px 4px 4px rgba(0,0,0,0.022)
+      background-color: #fff
+    .message__content
+      flex-direction: row-reverse
+    .message__text
+      color: $black
+    .message__date
+      margin-left: 0
+      margin-right: 46px
+    .message__check
+      margin-left: 0
+      margin-right: 9px
